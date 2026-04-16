@@ -1,0 +1,318 @@
+*{
+  margin:0;
+ box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background: #f2f2f2;
+    border: 0;
+    padding: 0;
+    width: 100vw;
+    overflow-x:hidden
+}
+    /* Menú lateral */
+   
+     #menu #cerrar{
+      display: none;
+     }
+    .sidebar {
+      position: absolute;
+      top:0;
+      left: 0;
+      height: 100vh;
+      width: 250px;
+      bottom: 0;
+      background: linear-gradient(to right, #003871, #1972ca);
+      color: rgb(255, 255, 255);
+     padding:10px ;
+     overflow-y: auto;
+     z-index: 1;
+
+    }
+    
+    .sidebar h3 {
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.4rem;
+      background-color: #015ab46c;
+      padding: 1.5rem;
+      border-radius: 20px;
+      font-family: Prompt;
+      border: 3px solid #012e5c;
+      
+
+    }
+    
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      padding: 10px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      margin: 10px;
+      font-family: Gabarito;
+    }
+    
+    .sidebar ul li:hover {
+      background: #4192e379;
+      border-radius: 20px;
+      
+    }
+    
+    /* Contenido principal */
+    .main {
+      flex: 1;
+      padding: 20px;
+      background: #fff;
+      overflow-y: auto;
+    }
+    
+    .search-box {
+      margin-bottom: 20px;
+      margin-left: 15rem;
+    }
+    
+    .search-box input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+    
+    /* Tarjetas de usuario */
+   
+.profile-card-clickable {
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  margin-left: 15rem;
+}
+
+.profile-card-clickable:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  font-family: Prompt;
+  display: flex;
+  align-items: center;
+  background-color:#1972cad2;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: rgb(172, 172, 172);
+      margin-right: 15px;
+    }
+    
+    .info h4, .info p {
+      margin: 5px 0;
+    }
+
+    .stars {
+      color: rgb(255, 136, 0);
+      font-size: 18px;
+    }
+    
+    .chat{
+      border-radius: 20px;
+      padding: 5px 10px ;
+      background-color:#1972ca;
+      border: 2px solid #0c2a49;
+    }
+
+    .chat:hover{
+      background-color: #0080ff;
+      
+    }
+ 
+    /* Menú lateral */
+  #menu, #cerrar {
+    display: none; 
+}
+ 
+    .sidebar {
+      width: 250px;
+      background: linear-gradient(to right, #003871, #1972ca);
+      color: rgb(255, 255, 255);
+      height: 100%;
+      padding: 10px;
+    }
+    
+    .sidebar h3 {
+      font-weight: bold;
+      text-align: center;
+      font-size: 1.4rem;
+      background-color: #015ab46c;
+      padding: 1.5rem;
+      border-radius: 20px;
+      font-family: Prompt;
+      border: 3px solid #012e5c;;
+    }
+    
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar ul li {
+      padding: 10px;
+      cursor: pointer;
+      font-size: 0.9rem;
+      margin: 10px;
+      font-family: Gabarito;
+    }
+    
+    .sidebar ul li:hover {
+      background: #4192e379;
+      border-radius: 20px;
+      
+    }
+    
+    /* Contenido principal */
+    .main {
+      flex: 1;
+      padding: 20px;
+      background: #fff;
+      overflow-y: auto;
+    }
+    
+    .search-box {
+      margin-bottom: 20px;
+    }
+    
+    .search-box input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 20px;
+    }
+    
+    /* Tarjetas de usuario */
+   
+.profile-card-clickable {
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.profile-card-clickable:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card {
+  font-family: Prompt;
+  display: flex;
+  align-items: center;
+  background-color:#1972cad2;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+}
+
+.avatar {
+  width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      background: rgb(172, 172, 172);
+      margin-right: 15px;
+    }
+    
+    .info h4, .info p {
+      margin: 5px 0;
+    }
+
+    .stars {
+      color: rgb(255, 136, 0);
+      font-size: 18px;
+    }
+    
+    .chat{
+      border-radius: 20px;
+      padding: 5px 10px ;
+      background-color:#1972ca;
+      border: 2px solid #0c2a49;
+    }
+    
+    .chat:hover{
+      background-color: #0080ff;
+      
+    }
+   
+    
+    @media screen and (max-width: 530px) {
+      
+     .profile-card-clickable{
+      margin-left: 0;
+     }
+      
+   .search-box{
+    margin-left: 25%;
+   }
+      #menu, #cerrar {
+        
+        display: block; 
+        
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background-color: #003871;
+       
+
+        padding: 8px 12px;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      /* El botón de cerrar debe estar oculto inicialmente y superponerse */
+      #cerrar {
+        display: none; 
+        /* Lo mostramos con JS cuando el menú esté abierto */
+        z-index: 101; 
+      }
+      .menu{
+        display: block; /* Muestra el botón */
+        position: fixed; /* Mantenlo en la esquina */
+        top: 10px;
+        left: 10px;
+        z-index: 100;}
+        
+    #cerrar{
+      display: block;
+    }
+    
+    .sidebar {
+        position: fixed; 
+        z-index: 50;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        
+       
+        transform: translateX(-100%);
+        transition: transform 0.3s ease-in-out;
+        padding-top: 50px;
+    }
+    
+ 
+    .sidebar.visible {
+      transform: translateX(0); 
+    }
+    
+    
+  }
